@@ -1,0 +1,42 @@
+name: koda_new_res
+description: A new Flutter project.
+publish_to: 'none' 
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.19.4 <3.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  firebase_core:
+  http:
+  firebase_auth:
+  fluttertoast:
+  cloud_firestore:
+  gsheets:
+  shared_preferences:
+  page_transition:
+  hive:
+  hive_flutter:
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons:
+
+  flutter_lints: ^2.0.0
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/koda.png"
+  
+
+
+flutter:
+  assets:
+    - assets/
+
+  uses-material-design: true
