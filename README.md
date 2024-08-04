@@ -14,23 +14,28 @@ These instructions will guide you through setting up and running the app on your
 - Dart SDK: Comes with Flutter
 - Android Studio or Xcode: For running the app on an emulator or physical device
 - Firebase account: For backend services
-- Hive: For local storage
 
-### Installation
+### Installation 
+## (run these commands in the terminal)
 
 1. Clone the repository:
     ```bash
     git clone https://github.com/your-username/your-repo.git
     ```
 
-2. Check whether flutter is ready for use: 
+2. Update flutter and its dependencies: 
+    ```bash
+    flutter upgrade
+    ```
+ 
+3. Check whether flutter is ready for use: 
     ```bash
     flutter doctor
     ```
     Resolve any issues shown by flutter doctor before moving to next steps
 
 
-3. Install the dependencies:
+4. Install the dependencies:
     ```bash
     flutter pub get
     ```
@@ -48,7 +53,7 @@ These instructions will guide you through setting up and running the app on your
 
 1. Go to the [Firebase Console](https://console.firebase.google.com/) and create a new project.
 
-2. Add an Android app to your Firebase project. Download the `google-services.json` file and place it in the `android/app` directory.
+2. Add an Android app to your Firebase project. Download the `google-services.json` file and place it in the `android/app` directory. A sample of the json file is already in the directory.
 
 3. Add an iOS app to your Firebase project. Download the `GoogleService-Info.plist` file and place it in the `ios/Runner` directory.
 
@@ -59,17 +64,7 @@ These instructions will guide you through setting up and running the app on your
       firebase_auth: latest_version
       cloud_firestore: latest_version
     ```
-
-5. Initialize Firebase in your Flutter project. Update the `main.dart` file:
-    ```dart
-    import 'package:firebase_core/firebase_core.dart';
-
-    void main() async {
-      WidgetsFlutterBinding.ensureInitialized();
-      await Firebase.initializeApp();
-      runApp(MyApp());
-    }
-    ```
+### Setup the cloud of data storage
 
 
 ### Contributing
