@@ -66,6 +66,8 @@ These instructions will guide you through setting up and running the app on your
     ```
 ### Setup the cloud of data storage
 
+## Files Structure And their purpose:
+
 
 ### Contributing
 
