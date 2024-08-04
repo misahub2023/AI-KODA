@@ -71,33 +71,6 @@ These instructions will guide you through setting up and running the app on your
     }
     ```
 
-### Hive Setup
-
-1. Add Hive dependencies to your `pubspec.yaml` file:
-    ```yaml
-    dependencies:
-      hive: latest_version
-      hive_flutter: latest_version
-
-    dev_dependencies:
-      hive_generator: latest_version
-      build_runner: latest_version
-    ```
-
-2. Initialize Hive in your `main.dart` file:
-    ```dart
-    import 'package:hive/hive.dart';
-    import 'package:hive_flutter/hive_flutter.dart';
-
-    void main() async {
-      WidgetsFlutterBinding.ensureInitialized();
-      await Hive.initFlutter();
-      runApp(MyApp());
-    }
-    ```
-
-3. Generate Hive TypeAdapters (if needed for your models).
-
 
 ### Contributing
 
