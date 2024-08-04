@@ -21,10 +21,16 @@ These instructions will guide you through setting up and running the app on your
 1. Clone the repository:
     ```bash
     git clone https://github.com/your-username/your-repo.git
-    cd your-repo
     ```
 
-2. Install the dependencies:
+2. Check whether flutter is ready for use: 
+    ```bash
+    flutter doctor
+    ```
+    Resolve any issues shown by flutter doctor before moving to next steps
+
+
+3. Install the dependencies:
     ```bash
     flutter pub get
     ```
