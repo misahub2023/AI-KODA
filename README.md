@@ -1,4 +1,4 @@
-# Flutter App
+# AI-KODA FLUTTER APP
 
 ## Project Overview
 
@@ -16,7 +16,7 @@ These instructions will guide you through setting up and running the app on your
 - Firebase account: For backend services
 
 ### Installation 
-## (run these commands in the terminal)
+#### (run these commands in the terminal)
 
 1. Clone the repository:
     ```bash
@@ -55,7 +55,7 @@ These instructions will guide you through setting up and running the app on your
 
 2. Add an Android app to your Firebase project. Download the `google-services.json` file and place it in the `android/app` directory. A sample of the json file is already in the directory.
 
-3. Add an iOS app to your Firebase project. Download the `GoogleService-Info.plist` file and place it in the `ios/Runner` directory.
+3. Add an iOS app to your Firebase project. Download the `GoogleService-Info.plist` file and place it in the `ios/Runner` directory. A sample of the plist file is already in the directory.
 
 4. Modify the `pubspec.yaml` file to include the necessary Firebase dependencies:
     ```yaml
@@ -67,6 +67,31 @@ These instructions will guide you through setting up and running the app on your
 ### Setup the cloud of data storage
 
 ## Files Structure And their purpose:
++ ios/
+    + Flutter/ (This folder contains Flutter-specific files that are automatically generated and managed by the Flutter framework)
+        + AppFrameworkInfo.plist (contains metadata about the Flutter framework)
+    + Runner.xcodeproj/ (This folder contains the Xcode project files for your IOS app)
+        + project.pbxproj (project file that describes the targets, build configurations, and file references for your Xcode project)
+    +  Runner.xcworkspace/ (This folder contains the workspace settings for your Xcode project)
+        + contents.xcworkspacedata.xml (ile defines the structure of your Xcode workspace, including references to your project and any dependencies)
+    + Runner/ (This folder contains the main iOS project files, including the app's source code, assets, and configurations)
+        + Assets.xcassets/ (This folder contains the app's image assets, such as icons and launch images)
+            + AppIcon.appiconset/
+                +  Contents.json (A JSON file that describes the structure and properties of the icon set)
+            + LaunchImage.imageset/
+                +  Contents.json (A JSON file that describes the structure and properties of the launch image set)
+                + README.md (explains steps to modify the launch screen)
+        + Base.lproj/ (This folder contains the storyboard files for the app's user interface)
+            + LaunchScreen.storyboard.xml (defines the layout and properties of the app's launch screen)
+            + Main.storyboard.xml (defines the layout and properties of the app's main interface)
+        + AppDelegate.swift (This file contains the entry point for the iOS app and handles app lifecycle events)
+        + GoogleService-Info.plist (This file contains configuration information for Firebase, including API keys and project identifiers)
+        + Info.plist (contains configuration settings for the iOS app, such as app permissions, icons, and other metadata)
++ android/
++ lib/
++ test/
+
+
 
 
 ### Contributing
