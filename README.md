@@ -1,7 +1,19 @@
 # AI-KODA FLUTTER APP
 
 ## Project Overview
-This Flutter app is designed to [describe the purpose of your app]. It includes features such as [list key features].
+AI-KODA is a simple and user-friendly application for gastroenterologists to score the VCE frames as per the latest scoring system i.e., KODA. This application called as AI-KODA score is fully automatic and works on an android phone. The scores are stored in real-time efficiently. It will also help in generating a multi-label image dataset which can be used for developing machine learning and deep learning tasks in this feld.
+
+The application consisted of a secure login system, profle setup, and two modules namely training module and testing module. The training module was taken from the original KODA score after necessary permission from the authors. 
+![](https://github.com/Manya-15/AI-KODA/blob/main/assets/page6img.png)
+![](https://github.com/Manya-15/AI-KODA/blob/main/assets/page11img.png)
+
+The testing module consisted of 2173 frames which were selected from the twenty-eight patient videos(These images are stored in azure cloud and 5 randomly chosen frames are present in `assets/test_images`. Two questions i.e., percentage of VM and degree of OV were displayed on the application. For each of the question, four options were given to the users where-in only one option in each question could be selected at a time.
+
+In the frst question, the four options were: `> 75%` (representing VMscore1), `50–75%` (representing VMscore2), `25–49%` (representing VMscore3), and `< 25%` (representing VMscore4). 
+In the second question, the four options were: `< 5%` (representing OVscore1), `5–25%` (representing OVscore2), `26–50%` (representing Vscore3) and `> 50%`(representing OVscore4). 
+
+In the back-end, for each selection in any of the two questions, a numeric ‘1’ was assigned. Rest of the non-selected options were assigned a numeric ‘0’. In this manner, each VCE frame were assigned two labels (VM and OV sub-scores) out of the total eight labels. This assignment was done by the inspiration of one-hot encoding method. It is a method used to convert categorical values to binary value of ‘0’ or ‘1’. Three things were saved in real-time in the form of an excel sheet at the application’s back-end. They were—**(1) option selected for each of the question, (2) their time-stamp, and (3) email ID.**
+
 
 ## Getting Started
 These instructions will guide you through setting up and running the app on your local machine.
@@ -32,13 +44,12 @@ These instructions will guide you through setting up and running the app on your
     ```bash
     flutter pub get
     ```
-    
-### Running the App
-1. Connect your device or start an emulator.
-2. Run the app:
-    ```bash
-    flutter run
-    ```
+
+### Google Sheets Setup
+1. Create a project in Google Cloud and enable the Google Sheets API.
+2. Download the JSON credentials file for a service account and replace the placeholders in the `credentials` field with your actual credentials in `lib/services/sheet.dart`.
+3. Create a new Google Spreadsheet and share it with the service account email (client_email from the `credentials`).
+4. Copy the spreadsheet ID from the URL and replace the placeholder in `spreadsheetId` with your actual spreadsheet ID in `lib/services/sheet.dart`.
 
 ### Firebase Setup
 1. Go to the [Firebase Console](https://console.firebase.google.com/) and create a new project.
@@ -51,9 +62,13 @@ These instructions will guide you through setting up and running the app on your
       firebase_auth: latest_version
       cloud_firestore: latest_version
     ```
-### Google Sheets and Cloud Setup
-1. 
 
+### Running the App
+1. Connect your device or start an emulator.
+2. Run the app:
+    ```bash
+    flutter run
+    ```
 
 ## Files Structure And their purpose
 + android/
@@ -118,13 +133,23 @@ These instructions will guide you through setting up and running the app on your
 + test/
     + [widget_test.dart](https://github.com/Manya-15/AI-KODA/tree/main/test/widget_test.dart) (File for testing the widgets of the app)
 
-### Contributing
-
+## Contributing
 1. Fork the repository.
 2. Create a new branch (`git checkout -b feature/your-feature`).
 3. Commit your changes (`git commit -am 'Add your feature'`).
 4. Push to the branch (`git push origin feature/your-feature`).
 5. Create a new Pull Request.
+
+## References
+This application was first conceptualized and detailed in the following papers:
+
+1. #### TITLE: A multi‑label dataset and its evaluation for automated scoring system  for cleanliness assessment in video capsule endoscopy
+    DOI/Link: [https://doi.org/10.1007/s13246-024-01441-w](https://doi.org/10.1007/s13246-024-01441-w)
+
+2. #### TITLE: Comprehensive evaluation of a new automatic scoring system for cleanliness assessment in video capsule endoscopy
+    DOI/Link: [10.1002/ima.23097](https://doi.org/10.1002/ima.23097)
+
+
 
 
 
