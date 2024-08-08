@@ -107,18 +107,6 @@ class _TestingState extends State<Testing> {
   Widget build(BuildContext context) {
     SizeConfig().init(context);
     var len = 5; //widget.snapshot.data.length;
-    // var viewImage1 = AssetImage(
-    //     "/Users/nikitagarg/Desktop/koda_new_res/assets/test_images/cleanliness_1.jpg");
-    // var viewImage2 = AssetImage(
-    //     "/Users/nikitagarg/Desktop/koda_new_res/assets/test_images/cleanliness_2.jpg");
-    // var viewImage3 = AssetImage(
-    //     "/Users/nikitagarg/Desktop/koda_new_res/assets/test_images/cleanliness_3.jpg");
-    // var viewImage4 = AssetImage(
-    //     "/Users/nikitagarg/Desktop/koda_new_res/assets/test_images/cleanliness_4.jpg");
-    // var viewImage5 = AssetImage(
-    //     "/Users/nikitagarg/Desktop/koda_new_res/assets/test_images/cleanliness_5.jpg");
-
-    //var viewIamge = widget.snapshot.data[index];
 
     return Scaffold(
       appBar: AppBar(
