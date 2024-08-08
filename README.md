@@ -14,7 +14,6 @@ These instructions will guide you through setting up and running the app on your
 
 ### Installation 
 #### (run these commands in the terminal)
-
 1. Clone the repository:
     ```bash
     git clone https://github.com/your-username/your-repo.git
@@ -35,7 +34,6 @@ These instructions will guide you through setting up and running the app on your
     ```
     
 ### Running the App
-
 1. Connect your device or start an emulator.
 2. Run the app:
     ```bash
@@ -43,7 +41,6 @@ These instructions will guide you through setting up and running the app on your
     ```
 
 ### Firebase Setup
-
 1. Go to the [Firebase Console](https://console.firebase.google.com/) and create a new project.
 2. Add an Android app to your Firebase project. Download the `google-services.json` file and place it in the `android/app` directory. A sample of the json file is already in the directory.
 3. Add an iOS app to your Firebase project. Download the `GoogleService-Info.plist` file and place it in the `ios/Runner` directory and also update `ios/firebase_app_id_file.json`. A sample of the both the files could be found in the mentioned directory.
@@ -54,8 +51,11 @@ These instructions will guide you through setting up and running the app on your
       firebase_auth: latest_version
       cloud_firestore: latest_version
     ```
-    
-## Files Structure And their purpose:
+### Google Sheets and Cloud Setup
+1. 
+
+
+## Files Structure And their purpose
 + android/
     + [app/](https://github.com/Manya-15/AI-KODA/tree/main/android/app) 
         + `src/` (Source files for different build variants)
@@ -110,13 +110,13 @@ These instructions will guide you through setting up and running the app on your
     + [auth/](https://github.com/Manya-15/AI-KODA/tree/main/lib/auth) (Contains authentication-related screens and logic)
     + [models/](https://github.com/Manya-15/AI-KODA/tree/main/lib/model) (Data models used across the app)
     + [screen/](https://github.com/Manya-15/AI-KODA/tree/main/lib/screen) (Contains the primary screens of the app)
-        + `koda_manual/` (Screens related to the KODA manual feature)
+        + `koda_manual/` (Screens related to the KODA training module)
     + [services/](https://github.com/Manya-15/AI-KODA/tree/main/lib/services) (Backend services and API handling)
     + [utils/](https://github.com/Manya-15/AI-KODA/tree/main/lib/utils) (Utility functions and widgets)
     + [firebase_options.dart](https://github.com/Manya-15/AI-KODA/tree/main/lib/firebase_options.dart) (Configuration file for Firebase initialization and setup)
     + [main.dart](https://github.com/Manya-15/AI-KODA/tree/main/lib/main.dart) (The entry point of the Flutter application)
 + test/
-    + [widget_test.dart](https://github.com/Manya-15/AI-KODA/tree/main/test/widget_test.dart) 
+    + [widget_test.dart](https://github.com/Manya-15/AI-KODA/tree/main/test/widget_test.dart) (File for testing the widgets of the app)
 
 ### Contributing
 
@@ -125,5 +125,6 @@ These instructions will guide you through setting up and running the app on your
 3. Commit your changes (`git commit -am 'Add your feature'`).
 4. Push to the branch (`git push origin feature/your-feature`).
 5. Create a new Pull Request.
+
 
 
