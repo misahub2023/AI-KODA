@@ -1,15 +1,12 @@
 # AI-KODA FLUTTER APP
 
 ## Project Overview
-
 This Flutter app is designed to [describe the purpose of your app]. It includes features such as [list key features].
 
 ## Getting Started
-
 These instructions will guide you through setting up and running the app on your local machine.
 
 ### Prerequisites
-
 - Flutter SDK: [Installation Guide](https://flutter.dev/docs/get-started/install)
 - Dart SDK: Comes with Flutter
 - Android Studio or Xcode: For running the app on an emulator or physical device
@@ -22,28 +19,24 @@ These instructions will guide you through setting up and running the app on your
     ```bash
     git clone https://github.com/your-username/your-repo.git
     ```
-
 2. Update flutter and its dependencies: 
     ```bash
     flutter upgrade
-    ```
- 
+    ``` 
 3. Check whether flutter is ready for use: 
     ```bash
     flutter doctor
     ```
     Resolve any issues shown by flutter doctor before moving to next steps
 
-
 4. Install the dependencies:
     ```bash
     flutter pub get
     ```
-
+    
 ### Running the App
 
 1. Connect your device or start an emulator.
-
 2. Run the app:
     ```bash
     flutter run
@@ -52,11 +45,8 @@ These instructions will guide you through setting up and running the app on your
 ### Firebase Setup
 
 1. Go to the [Firebase Console](https://console.firebase.google.com/) and create a new project.
-
 2. Add an Android app to your Firebase project. Download the `google-services.json` file and place it in the `android/app` directory. A sample of the json file is already in the directory.
-
 3. Add an iOS app to your Firebase project. Download the `GoogleService-Info.plist` file and place it in the `ios/Runner` directory and also update `ios/firebase_app_id_file.json`. A sample of the both the files could be found in the mentioned directory.
-
 4. Modify the `pubspec.yaml` file to include the necessary Firebase dependencies:
     ```yaml
     dependencies:
@@ -64,9 +54,35 @@ These instructions will guide you through setting up and running the app on your
       firebase_auth: latest_version
       cloud_firestore: latest_version
     ```
-
+    
 ## Files Structure And their purpose:
 + android/
+    + [app/](https://github.com/Manya-15/AI-KODA/tree/main/android/app) 
+        + `src/` (Source files for different build variants)
+            + `debug/` 
+                + `AndroidManifest.xml` (The manifest file for the debug build variant, specifying application metadata, permissions, and components)
+            + `main/` (Source files for the main build variant)
+                + `kotlin/com/example/koda_new_res/`
+                    + `MainActivity.kt` (The main entry point for the Android application written in Kotlin)
+                + `res/` (Resource files for the app, one can modify the launch screeen backgroud using multiple options available in this folder)
+                    + `drawable-v21/` (Drawable resources for API level 21 and above, one can modify the launch screeen backgroud using multiple options available in this directory)
+                        + `launch_background.xml` (Defines the launch screen background for the app)
+                    + `values-night/` 
+                        + `styles.xml` (Defines styles for the app in night mode)
+                    + `values/`
+                        + `styles.xml` (Defines styles for the app)
+                + `AndroidManifest.xml` (The manifest file for the main build variant, specifying application metadata, permissions, and components)
+            + `profile` (Source files for the profile build variant)
+                + `AndroidManifest.xml`
+        + `build.gradle` (Build configuration file for the app module, specifying dependencies, plugins, and build settings)
+        + `google-services.json` (Configuration file for Firebase, containing API keys and project identifiers)
+    + [gradle/wrapper/](https://github.com/Manya-15/AI-KODA/tree/main/android/gradle/wrapper) (Contains Gradle wrapper files to ensure a specific version of Gradle is used)
+        + `gradle-wrapper.properties` (Specifies properties for the Gradle wrapper, such as the Gradle distribution URL)
+    + [build.gradle](https://github.com/Manya-15/AI-KODA/tree/main/android/build.gradle) (Top-level build configuration file for the project, specifying project-wide dependencies and build settings)
+    + [gradle.properties](https://github.com/Manya-15/AI-KODA/tree/main/android/gradle.properties) (Specifies properties for the Gradle build system, such as JVM options and project properties)
+    + [koda_new_res_android.iml](https://github.com/Manya-15/AI-KODA/tree/main/android/koda_new_res_android.iml) (IntelliJ IDEA module file for the project)
+    + `[settings.gradle](https://github.com/Manya-15/AI-KODA/tree/main/android/settings.gradle) (Specifies the Gradle settings for the project, including module names and build configurations)
+
 + ios/
     + [Flutter/](https://github.com/Manya-15/AI-KODA/tree/main/ios/Flutter) (This folder contains Flutter-specific files that are automatically generated and managed by the Flutter framework)
         + `AppFrameworkInfo.plist` (contains metadata about the Flutter framework)
@@ -89,11 +105,18 @@ These instructions will guide you through setting up and running the app on your
         + `Info.plist` (contains configuration settings for the iOS app, such as app permissions, icons, and other metadata)
     + [Podfile](https://github.com/Manya-15/AI-KODA/tree/main/ios/Podfile) (This file is used by CocoaPods to manage your app's dependencies)
     + [firebase_app_id_file.json](https://github.com/Manya-15/AI-KODA/tree/main/ios/firebase_app_id_file.json) (This file contains your Firebase project configuration, including your Firebase app ID and other settings)
++ [assets/](https://github.com/Manya-15/AI-KODA/tree/main/assets) (This folder contains images used in the app) 
 + lib/
+    + [auth/](https://github.com/Manya-15/AI-KODA/tree/main/lib/auth) (Contains authentication-related screens and logic)
+    + [models/](https://github.com/Manya-15/AI-KODA/tree/main/lib/model) (Data models used across the app)
+    + [screen/](https://github.com/Manya-15/AI-KODA/tree/main/lib/screen) (Contains the primary screens of the app)
+        + `koda_manual/` (Screens related to the KODA manual feature)
+    + [services/](https://github.com/Manya-15/AI-KODA/tree/main/lib/services) (Backend services and API handling)
+    + [utils/](https://github.com/Manya-15/AI-KODA/tree/main/lib/utils) (Utility functions and widgets)
+    + [firebase_options.dart](https://github.com/Manya-15/AI-KODA/tree/main/lib/firebase_options.dart) (Configuration file for Firebase initialization and setup)
+    + [main.dart](https://github.com/Manya-15/AI-KODA/tree/main/lib/main.dart) (The entry point of the Flutter application)
 + test/
-
-
-
+    + [widget_test.dart](https://github.com/Manya-15/AI-KODA/tree/main/test/widget_test.dart) 
 
 ### Contributing
 
@@ -103,6 +126,4 @@ These instructions will guide you through setting up and running the app on your
 4. Push to the branch (`git push origin feature/your-feature`).
 5. Create a new Pull Request.
 
-### License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
