@@ -1,7 +1,7 @@
-# AI-KODA FLUTTER APP
+# Artificial Intelligence Korea Canada (AI-KODA) Flutter Application
 
 ## Project Overview
-AI-KODA is a simple and user-friendly application for gastroenterologists to score the VCE frames as per the latest scoring system i.e., KODA. This application called as AI-KODA score is fully automatic and works on an android phone. The scores are stored in real-time efficiently. It will also help in generating a multi-label image dataset which can be used for developing machine learning and deep learning tasks in this feld.
+Artificial Intelligence Korea-Canada (AI-KODA) is a simple and user-friendly application for gastroenterologists to score the VCE frames as per the latest scoring system i.e., KODA. This application called as AI-KODA score is fully automatic and works on an android phone. The scores are stored in real-time efficiently. It will also help in generating a multi-label image dataset which can be used for developing machine learning and deep learning tasks in this feld.
 
 The application consisted of a secure login system, profle setup, and two modules namely training module and testing module. The training module was taken from the original KODA score after necessary permission from the authors. 
 ![](https://github.com/Manya-15/AI-KODA/blob/main/assets/page6img.png)
