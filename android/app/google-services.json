@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "201234155939",
-    "project_id": "koda-score-2",
-    "storage_bucket": "koda-score-2.appspot.com"
+    "project_number": "PROJECT_NUMBER",
+    "project_id": "PROJECT_ID",
+    "storage_bucket": "STORAGE_BUCKET"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:201234155939:android:6d27c9a6039132d23e3216",
+        "mobilesdk_app_id": "MOBILE_SDK_APP_ID",
         "android_client_info": {
-          "package_name": "com.example.koda_new_res"
+          "package_name": "PACKAGE_NAME"
         }
       },
       "oauth_client": [
         {
-          "client_id": "201234155939-r27nq51jjdmcuonucks34m67f0f349a6.apps.googleusercontent.com",
+          "client_id": "CLIENT_ID",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyApn5Oq9NLIJjoc2Dyi5i02NMF_iEO2YCM"
+          "current_key": "API_KEY"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "201234155939-r27nq51jjdmcuonucks34m67f0f349a6.apps.googleusercontent.com",
+              "client_id": "CLIENT_ID",
               "client_type": 3
             }
           ]

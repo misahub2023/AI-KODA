@@ -18,9 +18,8 @@ dependencies:
   gsheets:
   shared_preferences:
   page_transition:
-  hive:
-  hive_flutter:
-
+  hive: ^2.0.0
+  hive_flutter: ^1.0.0
 dev_dependencies:
   flutter_test:
     sdk: flutter
