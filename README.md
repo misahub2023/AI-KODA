@@ -30,7 +30,7 @@ These instructions will guide you through setting up and running the app on your
 #### (run these commands in the terminal)
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-username/your-repo.git
+    git clone https://github.com/misahub2023/AI-KODA.git
     ```
 2. Update flutter and its dependencies: 
     ```bash
