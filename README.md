@@ -135,6 +135,7 @@ These instructions will guide you through setting up and running the app on your
 + test/
     + [widget_test.dart](https://github.com/Manya-15/AI-KODA/tree/main/test/widget_test.dart) (File for testing the widgets of the app)
 
+#### This application is developed for android devices so for IOS supported app, one must modify the files in `ios` folder according to the details of each file mentioned above.
 ## Contributing
 1. Fork the repository.
 2. Create a new branch (`git checkout -b feature/your-feature`).
