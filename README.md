@@ -7,13 +7,15 @@ The application consisted of a secure login system, profle setup, and two module
 ![](https://github.com/Manya-15/AI-KODA/blob/main/assets/page6img.png)
 ![](https://github.com/Manya-15/AI-KODA/blob/main/assets/page11img.png)
 
-The testing module consisted of 2173 frames which were selected from the twenty-eight patient videos (These images are stored in azure cloud and 5 randomly chosen frames are present in `assets/test_images`. Two questions i.e., percentage of Visualized Mucosa (VM) and degree of Obstructed View (OV) were displayed on the application. For each of the question, four options were given to the users where-in only one option in each question could be selected at a time.
+The testing module consisted of 2173 frames which were selected from the twenty-eight patient videos (These images are stored in azure cloud and 5 randomly chosen frames are present in `assets/test_images`). Two questions i.e., percentage of Visualized Mucosa (VM) and degree of Obstructed View (OV) were displayed on the application. For each of the question, four options were given to the users where-in only one option in each question could be selected at a time.
 
 In the first question, the four options were: `> 75%` (representing VMscore1), `50–75%` (representing VMscore2), `25–49%` (representing VMscore3), and `< 25%` (representing VMscore4). 
-In the second question, the four options were: `< 5%` (representing OVscore1), `5–25%` (representing OVscore2), `26–50%` (representing Vscore3) and `> 50%`(representing OVscore4). 
+In the second question, the four options were: `< 5%` (representing OVscore1), `5–25%` (representing OVscore2), `26–50%` (representing Vscore3) and `> 50%`(representing OVscore4). Additionally, users can zoom in on each frame for a clearer view before answering the questions.
 
-In the back-end, for each selection in any of the two questions, a numeric ‘1’ was assigned. Rest of the non-selected options were assigned a numeric ‘0’. In this manner, each VCE frame were assigned two labels (VM and OV sub-scores) out of the total eight labels. This assignment was done by the inspiration of one-hot encoding method. It is a method used to convert categorical values to binary value of ‘0’ or ‘1’. Three things were saved in real-time in the form of an excel sheet at the application’s back-end. They were—**(1) option selected for each of the question, (2) their time-stamp, and (3) email ID.**
+In the back-end, time taken to analyse each frame is recorded and for each selection in any of the two questions, a numeric ‘1’ was assigned. Rest of the non-selected options were assigned a numeric ‘0’. In this manner, each VCE frame were assigned two labels (VM and OV sub-scores) out of the total eight labels. This assignment was done by the inspiration of one-hot encoding method. It is a method used to convert categorical values to binary value of ‘0’ or ‘1’. Three things were saved in real-time in the form of an excel sheet at the application’s back-end. They were—**(1) option selected for each of the question, (2) their time-stamp, and (3) email ID.**
 
+## AI-KODA Score Application Manual
+The **AI-KODA Score Application Manual** is a comprehensive guide designed to help users understand the functionality of the AI-KODA app. It provides detailed instructions on how to navigate the app, use its various features, and effectively score Video Capsule Endoscopy (VCE) frames. The manual is essential for both new users and those looking to maximize the app's potential. To access the manual, please refer to the documentation included in the repository by the same name.
 
 ## Getting Started
 These instructions will guide you through setting up and running the app on your local machine.
