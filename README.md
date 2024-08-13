@@ -1,15 +1,15 @@
 # Artificial Intelligence Korea Canada (AI-KODA) Flutter Application
 
 ## Project Overview
-Artificial Intelligence Korea-Canada (AI-KODA) is a simple and user-friendly application for gastroenterologists to score the VCE frames as per the latest scoring system i.e., KODA. This application called as AI-KODA score is fully automatic and works on an android phone. The scores are stored in real-time efficiently. It will also help in generating a multi-label image dataset which can be used for developing machine learning and deep learning tasks in this feld.
+Artificial Intelligence Korea-Canada (AI-KODA) is a simple and user-friendly application for gastroenterologists to score the Video Capsule Endoscopy (VCE) frames as per the latest scoring system i.e., KODA. This application called as AI-KODA score is fully automatic and works on an android phone. The scores are stored in real-time efficiently. It will also help in generating a multi-label image dataset which can be used for developing machine learning and deep learning tasks in this feld.
 
 The application consisted of a secure login system, profle setup, and two modules namely training module and testing module. The training module was taken from the original KODA score after necessary permission from the authors. 
 ![](https://github.com/Manya-15/AI-KODA/blob/main/assets/page6img.png)
 ![](https://github.com/Manya-15/AI-KODA/blob/main/assets/page11img.png)
 
-The testing module consisted of 2173 frames which were selected from the twenty-eight patient videos(These images are stored in azure cloud and 5 randomly chosen frames are present in `assets/test_images`. Two questions i.e., percentage of VM and degree of OV were displayed on the application. For each of the question, four options were given to the users where-in only one option in each question could be selected at a time.
+The testing module consisted of 2173 frames which were selected from the twenty-eight patient videos (These images are stored in azure cloud and 5 randomly chosen frames are present in `assets/test_images`. Two questions i.e., percentage of Visualized Mucosa (VM) and degree of Obstructed View (OV) were displayed on the application. For each of the question, four options were given to the users where-in only one option in each question could be selected at a time.
 
-In the frst question, the four options were: `> 75%` (representing VMscore1), `50–75%` (representing VMscore2), `25–49%` (representing VMscore3), and `< 25%` (representing VMscore4). 
+In the first question, the four options were: `> 75%` (representing VMscore1), `50–75%` (representing VMscore2), `25–49%` (representing VMscore3), and `< 25%` (representing VMscore4). 
 In the second question, the four options were: `< 5%` (representing OVscore1), `5–25%` (representing OVscore2), `26–50%` (representing Vscore3) and `> 50%`(representing OVscore4). 
 
 In the back-end, for each selection in any of the two questions, a numeric ‘1’ was assigned. Rest of the non-selected options were assigned a numeric ‘0’. In this manner, each VCE frame were assigned two labels (VM and OV sub-scores) out of the total eight labels. This assignment was done by the inspiration of one-hot encoding method. It is a method used to convert categorical values to binary value of ‘0’ or ‘1’. Three things were saved in real-time in the form of an excel sheet at the application’s back-end. They were—**(1) option selected for each of the question, (2) their time-stamp, and (3) email ID.**
@@ -140,8 +140,11 @@ These instructions will guide you through setting up and running the app on your
 4. Push to the branch (`git push origin feature/your-feature`).
 5. Create a new Pull Request.
 
-## References
-This application was first conceptualized and detailed in the following papers:
+## Credits
+The idea of the application was developed by Dr. Nidhi Goel, Dr. Palak Handa, and executed by Ms. Nikita Garg. Dr. Deepak Gunjan, Dr. Rajat, Dr. Syed, and Dr. Tabish from the Department of Gastroenterology and HNU, All India Institute of Medical Sciences New Delhi participated in scoring VCE frames using the application. The application was developed as a part of a study done to assess the cleanliness assessment in VCE. The study was done according to Helsinki declarations. It was approved by the Department of Gastroenterology and HNU, All India Institute of Medical Sciences New Delhi ethics committee (Ref. No.: IEC-666/05.08.2022). The study was supported under the Core Research Grant (CRG/2022/001755). Authors are thankful to Ms. Manya Joshi for helping in the development of the GitHub repository.
+
+##  References
+This application was first conceptualized and detailed in the following articles.
 
 1. #### TITLE: A multi‑label dataset and its evaluation for automated scoring system  for cleanliness assessment in video capsule endoscopy
     DOI/Link: [https://doi.org/10.1007/s13246-024-01441-w](https://doi.org/10.1007/s13246-024-01441-w)
@@ -149,7 +152,11 @@ This application was first conceptualized and detailed in the following papers:
 2. #### TITLE: Comprehensive evaluation of a new automatic scoring system for cleanliness assessment in video capsule endoscopy
     DOI/Link: [10.1002/ima.23097](https://doi.org/10.1002/ima.23097)
 
+3. #### TITLE: AI-KODA Score Application for Cleanliness Assessment in Video Capsule Endoscopy Frames
+   DOI/Link: [https://doi.org/10.1080/13645706.2024.2390879](https://doi.org/10.1080/13645706.2024.2390879)
 
+4.  #### TITLE: A SYSTEM AND METHOD TO SCORE CAPSULE ENDOSCOPY FRAMES USING KODA [KOREAN-CANADA] SCORING METHOD
+   Granted Indian Patent No. 511453
 
-
-
+5. #### TITLE: Cleanliness Assessment of Small Bowel Capsule Endoscopy using AI-KODA Score Application
+   Poster presented in the KSGE Days 2023
