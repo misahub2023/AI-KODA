@@ -1,4 +1,4 @@
-# Artificial Intelligence Korea Canada (AI-KODA) Flutter Application
+# Artificial Intelligence Korea-Canada (AI-KODA) Flutter Application
 
 ## Project Overview
 Artificial Intelligence Korea-Canada (AI-KODA) is a simple and user-friendly application for gastroenterologists to score the Video Capsule Endoscopy (VCE) frames as per the latest scoring system i.e., KODA. This application called as AI-KODA score is fully automatic and works on an android phone. The scores are stored in real-time efficiently. It will also help in generating a multi-label image dataset which can be used for developing machine learning and deep learning tasks in this feld.
