@@ -4,8 +4,8 @@
 Artificial Intelligence Korea-Canada (AI-KODA) is a simple and user-friendly application for gastroenterologists to score the Video Capsule Endoscopy (VCE) frames as per the latest scoring system i.e., KODA. This application called as AI-KODA score is fully automatic and works on an android phone. The scores are stored in real-time efficiently. It will also help in generating a multi-label image dataset which can be used for developing machine learning and deep learning tasks in this feld.
 
 The application consisted of a secure login system, profle setup, and two modules namely training module and testing module. The training module was taken from the original KODA score after necessary permission from the authors. 
-![](https://github.com/Manya-15/AI-KODA/blob/main/assets/page6img.png)
-![](https://github.com/Manya-15/AI-KODA/blob/main/assets/page11img.png)
+![](https://github.com/misahub2023/AI-KODA/blob/main/assets/page6img.png)
+![](https://github.com/misahub2023/AI-KODA/blob/main/assets/page11img.png)
 
 The testing module consisted of 2173 frames which were selected from the twenty-eight patient videos (These images are stored in azure cloud and 5 randomly chosen frames are present in `assets/test_images`). Two questions i.e., percentage of Visualized Mucosa (VM) and degree of Obstructed View (OV) were displayed on the application. For each of the question, four options were given to the users where-in only one option in each question could be selected at a time.
 
@@ -74,7 +74,7 @@ These instructions will guide you through setting up and running the app on your
 
 ## Files Structure And their purpose
 + android/
-    + [app/](https://github.com/Manya-15/AI-KODA/tree/main/android/app) 
+    + [app/](https://github.com/misahub2023/AI-KODA/tree/main/android/app) 
         + `src/` (Source files for different build variants)
             + `debug/` 
                 + `AndroidManifest.xml` (The manifest file for the debug build variant, specifying application metadata, permissions, and components)
@@ -93,21 +93,21 @@ These instructions will guide you through setting up and running the app on your
                 + `AndroidManifest.xml`
         + `build.gradle` (Build configuration file for the app module, specifying dependencies, plugins, and build settings)
         + `google-services.json` (Configuration file for Firebase, containing API keys and project identifiers)
-    + [gradle/wrapper/](https://github.com/Manya-15/AI-KODA/tree/main/android/gradle/wrapper) (Contains Gradle wrapper files to ensure a specific version of Gradle is used)
+    + [gradle/wrapper/](https://github.com/misahub2023/AI-KODA/tree/main/android/gradle/wrapper) (Contains Gradle wrapper files to ensure a specific version of Gradle is used)
         + `gradle-wrapper.properties` (Specifies properties for the Gradle wrapper, such as the Gradle distribution URL)
-    + [build.gradle](https://github.com/Manya-15/AI-KODA/tree/main/android/build.gradle) (Top-level build configuration file for the project, specifying project-wide dependencies and build settings)
-    + [gradle.properties](https://github.com/Manya-15/AI-KODA/tree/main/android/gradle.properties) (Specifies properties for the Gradle build system, such as JVM options and project properties)
-    + [koda_new_res_android.iml](https://github.com/Manya-15/AI-KODA/tree/main/android/koda_new_res_android.iml) (IntelliJ IDEA module file for the project)
-    + `[settings.gradle](https://github.com/Manya-15/AI-KODA/tree/main/android/settings.gradle) (Specifies the Gradle settings for the project, including module names and build configurations)
+    + [build.gradle](https://github.com/misahub2023/AI-KODA/tree/main/android/build.gradle) (Top-level build configuration file for the project, specifying project-wide dependencies and build settings)
+    + [gradle.properties](https://github.com/misahub2023/AI-KODA/tree/main/android/gradle.properties) (Specifies properties for the Gradle build system, such as JVM options and project properties)
+    + [koda_new_res_android.iml](https://github.com/misahub2023/AI-KODA/tree/main/android/koda_new_res_android.iml) (IntelliJ IDEA module file for the project)
+    + `[settings.gradle](https://github.com/misahub2023/AI-KODA/tree/main/android/settings.gradle) (Specifies the Gradle settings for the project, including module names and build configurations)
 
 + ios/
-    + [Flutter/](https://github.com/Manya-15/AI-KODA/tree/main/ios/Flutter) (This folder contains Flutter-specific files that are automatically generated and managed by the Flutter framework)
+    + [Flutter/](https://github.com/misahub2023/AI-KODA/tree/main/ios/Flutter) (This folder contains Flutter-specific files that are automatically generated and managed by the Flutter framework)
         + `AppFrameworkInfo.plist` (contains metadata about the Flutter framework)
-    + [Runner.xcodeproj/](https://github.com/Manya-15/AI-KODA/tree/main/ios/Runner.xcodeproj) (This folder contains the Xcode project files for your IOS app)
+    + [Runner.xcodeproj/](https://github.com/misahub2023/AI-KODA/tree/main/ios/Runner.xcodeproj) (This folder contains the Xcode project files for your IOS app)
         + `project.pbxproj` (project file that describes the targets, build configurations, and file references for your Xcode project)
-    +  [Runner.xcworkspace/](https://github.com/Manya-15/AI-KODA/tree/main/ios/Runner.xcworkspace) (This folder contains the workspace settings for your Xcode project)
+    +  [Runner.xcworkspace/](https://github.com/misahub2023/AI-KODA/tree/main/ios/Runner.xcworkspace) (This folder contains the workspace settings for your Xcode project)
         + `contents.xcworkspacedata.xml` (ile defines the structure of your Xcode workspace, including references to your project and any dependencies)
-    + [Runner/](https://github.com/Manya-15/AI-KODA/tree/main/ios/Runner) (This folder contains the main iOS project files, including the app's source code, assets, and configurations)
+    + [Runner/](https://github.com/misahub2023/AI-KODA/tree/main/ios/Runner) (This folder contains the main iOS project files, including the app's source code, assets, and configurations)
         + `Assets.xcassets/` (This folder contains the app's image assets, such as icons and launch images)
             + `AppIcon.appiconset/`
                 +  `Contents.json` (A JSON file that describes the structure and properties of the icon set)
@@ -120,20 +120,20 @@ These instructions will guide you through setting up and running the app on your
         + `AppDelegate.swift` (This file contains the entry point for the iOS app and handles app lifecycle events)
         + `GoogleService-Info.plist` (This file contains configuration information for Firebase, including API keys and project identifiers)
         + `Info.plist` (contains configuration settings for the iOS app, such as app permissions, icons, and other metadata)
-    + [Podfile](https://github.com/Manya-15/AI-KODA/tree/main/ios/Podfile) (This file is used by CocoaPods to manage your app's dependencies)
-    + [firebase_app_id_file.json](https://github.com/Manya-15/AI-KODA/tree/main/ios/firebase_app_id_file.json) (This file contains your Firebase project configuration, including your Firebase app ID and other settings)
-+ [assets/](https://github.com/Manya-15/AI-KODA/tree/main/assets) (This folder contains images used in the app) 
+    + [Podfile](https://github.com/misahub2023/AI-KODA/tree/main/ios/Podfile) (This file is used by CocoaPods to manage your app's dependencies)
+    + [firebase_app_id_file.json](https://github.com/misahub2023/AI-KODA/tree/main/ios/firebase_app_id_file.json) (This file contains your Firebase project configuration, including your Firebase app ID and other settings)
++ [assets/](https://github.com/misahub2023/AI-KODA/tree/main/assets) (This folder contains images used in the app) 
 + lib/
-    + [auth/](https://github.com/Manya-15/AI-KODA/tree/main/lib/auth) (Contains authentication-related screens and logic)
-    + [models/](https://github.com/Manya-15/AI-KODA/tree/main/lib/model) (Data models used across the app)
-    + [screen/](https://github.com/Manya-15/AI-KODA/tree/main/lib/screen) (Contains the primary screens of the app)
+    + [auth/](https://github.com/misahub2023/AI-KODA/tree/main/lib/auth) (Contains authentication-related screens and logic)
+    + [models/](https://github.com/misahub2023/AI-KODA/tree/main/lib/model) (Data models used across the app)
+    + [screen/](https://github.com/misahub2023/AI-KODA/tree/main/lib/screen) (Contains the primary screens of the app)
         + `koda_manual/` (Screens related to the KODA training module)
-    + [services/](https://github.com/Manya-15/AI-KODA/tree/main/lib/services) (Backend services and API handling)
-    + [utils/](https://github.com/Manya-15/AI-KODA/tree/main/lib/utils) (Utility functions and widgets)
-    + [firebase_options.dart](https://github.com/Manya-15/AI-KODA/tree/main/lib/firebase_options.dart) (Configuration file for Firebase initialization and setup)
-    + [main.dart](https://github.com/Manya-15/AI-KODA/tree/main/lib/main.dart) (The entry point of the Flutter application)
+    + [services/](https://github.com/misahub2023/AI-KODA/tree/main/lib/services) (Backend services and API handling)
+    + [utils/](https://github.com/misahub2023/AI-KODA/tree/main/lib/utils) (Utility functions and widgets)
+    + [firebase_options.dart](https://github.com/misahub2023/AI-KODA/tree/main/lib/firebase_options.dart) (Configuration file for Firebase initialization and setup)
+    + [main.dart](https://github.com/misahub2023/AI-KODA/tree/main/lib/main.dart) (The entry point of the Flutter application)
 + test/
-    + [widget_test.dart](https://github.com/Manya-15/AI-KODA/tree/main/test/widget_test.dart) (File for testing the widgets of the app)
+    + [widget_test.dart](https://github.com/misahub2023/AI-KODA/tree/main/test/widget_test.dart) (File for testing the widgets of the app)
 
 #### This application is developed for android devices so for IOS supported app, one must modify the files in `ios` folder according to the details of each file mentioned above.
 ## Contributing
