@@ -26,17 +26,17 @@ class DefaultFirebaseOptions {
         return ios;
       case TargetPlatform.macOS:
         throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for macos - '
+          'DefaultFirebaseOptions have not been configured for macOS - '
           'you can reconfigure this by running the FlutterFire CLI again.',
         );
       case TargetPlatform.windows:
         throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for windows - '
+          'DefaultFirebaseOptions have not been configured for Windows - '
           'you can reconfigure this by running the FlutterFire CLI again.',
         );
       case TargetPlatform.linux:
         throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for linux - '
+          'DefaultFirebaseOptions have not been configured for Linux - '
           'you can reconfigure this by running the FlutterFire CLI again.',
         );
       default:
@@ -47,30 +47,30 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyC8vOtoQwqkENrkWTdtgbUaSjDpgsTK5NM',
-    appId: '1:201234155939:web:f5c3f34bc96954323e3216',
-    messagingSenderId: '201234155939',
-    projectId: 'koda-score-2',
-    authDomain: 'koda-score-2.firebaseapp.com',
-    storageBucket: 'koda-score-2.appspot.com',
-    measurementId: 'G-3LXEWFWG0H',
+    apiKey: 'your-web-api-key',
+    appId: 'your-web-app-id',
+    messagingSenderId: 'your-web-messaging-sender-id',
+    projectId: 'your-web-project-id',
+    authDomain: 'your-web-auth-domain',
+    storageBucket: 'your-web-storage-bucket',
+    measurementId: 'your-web-measurement-id',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyApn5Oq9NLIJjoc2Dyi5i02NMF_iEO2YCM',
-    appId: '1:201234155939:android:6d27c9a6039132d23e3216',
-    messagingSenderId: '201234155939',
-    projectId: 'koda-score-2',
-    storageBucket: 'koda-score-2.appspot.com',
+    apiKey: 'your-android-api-key',
+    appId: 'your-android-app-id',
+    messagingSenderId: 'your-android-messaging-sender-id',
+    projectId: 'your-android-project-id',
+    storageBucket: 'your-android-storage-bucket',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyCtNBrGL2Z40QbEbhImW4so5RhC7hosBrg',
-    appId: '1:201234155939:ios:dd5fb098b35534cc3e3216',
-    messagingSenderId: '201234155939',
-    projectId: 'koda-score-2',
-    storageBucket: 'koda-score-2.appspot.com',
-    iosClientId: '201234155939-7nhuqid6prjbak0jqf04pav7lrg32gfi.apps.googleusercontent.com',
-    iosBundleId: 'com.example.kodaNewRes',
+    apiKey: 'your-ios-api-key',
+    appId: 'your-ios-app-id',
+    messagingSenderId: 'your-ios-messaging-sender-id',
+    projectId: 'your-ios-project-id',
+    storageBucket: 'your-ios-storage-bucket',
+    iosClientId: 'your-ios-client-id',
+    iosBundleId: 'your-ios-bundle-id',
   );
 }
