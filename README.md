@@ -57,7 +57,8 @@ These instructions will guide you through setting up and running the app on your
 1. Go to the [Firebase Console](https://console.firebase.google.com/) and create a new project.
 2. Add an Android app to your Firebase project. Download the `google-services.json` file and place it in the `android/app` directory. A sample of the json file is already in the directory.
 3. Add an iOS app to your Firebase project. Download the `GoogleService-Info.plist` file and place it in the `ios/Runner` directory and also update `ios/firebase_app_id_file.json`. A sample of the both the files could be found in the mentioned directory.
-4. Modify the `pubspec.yaml` file to include the necessary Firebase dependencies:
+4. Add your Firebase configuration details to the `firebase_options.dart` file  in `lib` folder by replacing the placeholder values (e.g., `'your-web-api-key'`, `'your-android-api-key'`, etc.) with the actual values obtained from your Firebase project settings.
+5. Modify the `pubspec.yaml` file to include the necessary Firebase dependencies:
     ```yaml
     dependencies:
       firebase_core: latest_version
