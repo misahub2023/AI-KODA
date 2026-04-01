@@ -144,9 +144,6 @@ These instructions will guide you through setting up and running the app on your
 4. Push to the branch (`git push origin feature/your-feature`).
 5. Create a new Pull Request.
 
-## Credits
-The idea of the application was developed by Dr. Nidhi Goel, Dr. Palak Handa, and executed by Ms. Nikita Garg. Dr. Deepak Gunjan, Dr. Rajat, Dr. Syed, and Dr. Tabish from the Department of Gastroenterology and HNU, All India Institute of Medical Sciences New Delhi participated in scoring VCE frames using the application. The application was developed as a part of a study done to assess the cleanliness assessment in VCE. The study was done according to Helsinki declarations. It was approved by the Department of Gastroenterology and HNU, All India Institute of Medical Sciences New Delhi ethics committee (Ref. No.: IEC-666/05.08.2022). The study was supported under the Core Research Grant (CRG/2022/001755). Authors are thankful to Ms. Manya Joshi for helping in the development of the GitHub repository.
-
 ##  References
 This application was first conceptualized and detailed in the following articles.
 
